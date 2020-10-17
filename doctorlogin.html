@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+   body{
+   background-image:url("doc.jpg");
+   background-size:cover;
+   margin:0;
+   }
+   
+   input{
+   width:70%;
+   padding:10px 20px;
+   border:1px #aaa solid;
+   font-size:15px
+   background:#fff;
+   display:block;
+   margin:20px ;
+   
+   }
+   h1,h2
+ {
+font-family:arial;
+font-weight:bold;
+font-size:38px;
+ color:tomato;
+}
+ 
+ div{
+    width:30%;
+	height:515px;
+	background:rgba(0,0,0,.2);
+	position:absolute;
+	top:180px;
+	left:800px;
+   }
+  
+  form{
+    margin-top:30px;
+		
+  }
+  b{
+   font-size:25px;
+   color:red;
+  }
+  img{
+  cursor:pointer;
+  display:block;
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  }
+  
+</style> 
+
+<script>
+function doctorlogin()
+{
+  if(   document.getElementById("text5").value == "doctorname"
+       && document.getElementById("text6").value == "doctor" )
+    {
+	        alert( "Login successful" );
+	   return true;
+    }
+    else
+    {
+	        alert( "Please Enter Correct Username and Password or please give inputs" );
+	    return false;
+    }
+}
+</script>
+
+
+</head>
+<body >
+<h1 align="center">BLOOD DONATION</h1>
+   <div>
+   <center><form onsubmit="return doctorlogin()" action="Doctor.html" >
+   <img src="pic.png" />
+   <b> DOCTOR LOGIN </b>
+   <input type="user name"  placeholder="user name" id="text5">
+   <input type="password" placeholder="password" id="text6">
+   <input type="submit" value="LOGIN" placeholder="login" >
+   <label><input type="checkbox" checked="checked"> Remember me</label></br></br>
+   <a href="Signup%20form.html">Not a member</a></br></br><a href="adminlogin.html">Looking for Admin Login</a></br></br>
+   <a href="HTML PROJECTFR.HTML">Looking for User Login</a>
+   </hr>
+   </form></center>
+     </div>
+<marquee scrollamount="10"  direction="right" >
+<h2>Welcome Doctors You are Here to save Lives</h2>
+</marquee>
+ 
+</body>
+</html>
